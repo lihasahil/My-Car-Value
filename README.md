@@ -1,9 +1,9 @@
 # What I learned through this project
 
 - Different decorators that TypeORM uses
-  - @Entity(): tells typeORM to go to the database and check whether there exist the table named with that entity
-  - @PrimaryGeneratedColumn(): creates a primary key column to the table
-  - @Column(): makes TypeORM to create a column into the table of that entity
+  - **@Entity()**: tells typeORM to go to the database and check whether there exist the table named with that entity
+  - **@PrimaryGeneratedColumn()**: creates a primary key column to the table
+  - **@Column()**: makes TypeORM to create a column into the table of that entity
 
 ```
 @Entity()
@@ -17,11 +17,11 @@ export class User {
 }
 ```
 
-- @AfterInsert(): Defines what to do after data is inserted in entity table
+- **@AfterInsert()**: Defines what to do after data is inserted in entity table
 
-- AfterUpdate(): Defines what to after data is updated in entity table
+- **@AfterUpdate()**: Defines what to after data is updated in entity table
 
-- AfterRemove(): Defines what to do after data is removed from entity table
+- **@AfterRemove()**: Defines what to do after data is removed from entity table
 
 ```
  @AfterInsert()
