@@ -72,3 +72,25 @@
    return user;
  }
 ```
+
+- Creating custom decorator using createParamDecorator
+
+- **@UseGuards()**: tells the framework to run one or more guards before executing a route handler, controller, or resolver.
+
+```
+Use case:
+
+@UseGuards(AuthGuard)
+  @Get('/whoami')
+  whoAmI(@CurrentUser() user: User) {
+    return user;
+  }
+
+  # Output if not fullfilled
+
+  {
+    "message": "Forbidden resource",
+    "error": "Forbidden",
+    "statusCode": 403
+}
+```
